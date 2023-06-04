@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BLOG FILOSÓFICO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #666;
+      margin: 30px 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background-color: #fff;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -220px;
+      width: 220px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      transition: all 0.3s;
+      z-index: 999;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      background-color: #222;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+    }
+
+    .content {
+      margin-left: 0;
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    .sidebar-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 999;
+    }
+
+    .sidebar-toggle:hover {
+      background-color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar-toggle {
+        top: 10px;
+        left: 10px;
+      }
+
+      .sidebar {
+        width: 180px;
+      }
+    }
+    .sidebar ul li a {
+      /* Agrega este estilo para dar un aspecto de enlace */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar-toggle" id="sidebar-toggle">&#9776;</div>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a class="sidebar-link" data-target="inicios">Los inicios de la filosofía</a></li>
+      <li><a class="sidebar-link" data-target="filosofos">Filósofos y filósofas de la historia</a></li>
+      <li><a class="sidebar-link" data-target="libros">Libros filosóficos</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="header">
+      <h1 style="color: white;">BLOG FILOSÓFICO</h1>
+    </div>
+
+  <div class="section">
+    <h2>Los inicios de la filosofía</h2>
+    <p>La filosofía, como disciplina intelectual, se remonta a los albores de la civilización humana. En sus inicios, los seres humanos comenzaron a cuestionarse el mundo que los rodeaba, buscando respuestas más allá de las explicaciones mitológicas y religiosas. Este despertar intelectual marcó el inicio de la filosofía, una forma de indagar, razonar y reflexionar sobre los aspectos fundamentales de la existencia y el conocimiento.</p>
+    <img src="dioses griegos.jpg" alt="dioses griegos.jpg">
+    <p>Uno de los temas principales en los inicios de la filosofía fue la cosmología, es decir, la búsqueda de respuestas sobre el origen y la naturaleza del universo. Los primeros filósofos griegos, conocidos como los presocráticos, se preguntaban sobre la composición de la realidad y proponían diferentes teorías para explicarla. Tales de Mileto, por ejemplo, argumentaba que el agua era el elemento primordial, mientras que Anaximandro postulaba la existencia de una sustancia indefinida llamada "ápeiron". Estas primeras teorías sentaron las bases para el pensamiento racional y científico que caracterizaría a la filosofía posterior.</p>
+    <img src="cosmología.jpg" alt="Imagen de los inicios de la filosofía">
+    <p>Otro aspecto crucial en los inicios de la filosofía fue la búsqueda de la verdad y el conocimiento. Los filósofos de la época se interesaron por el estudio de la epistemología, es decir, cómo se puede alcanzar el conocimiento verdadero y cómo se puede distinguir de la mera opinión. Parménides planteó la idea de que solo el ser es verdadero y que el devenir y la apariencia son ilusorios. Por otro lado, Heráclito argumentaba que el cambio era la esencia misma de la realidad y que el conocimiento debía adaptarse a esta constante transformación.</p>
+    <img src="epistemología.jpg" alt="Imagen de los inicios de la filosofía">
+    <p>La ética y la moral también ocuparon un lugar destacado en los inicios de la filosofía. Los filósofos se preguntaban cómo se debía vivir una vida virtuosa y cuál era la mejor manera de tomar decisiones éticas. Pitágoras, por ejemplo, promovía la idea de la armonía y la proporción como guías para una vida virtuosa. Sócrates, uno de los filósofos más influyentes de la antigua Grecia, se centró en la reflexión ética a través del método de la mayéutica, un proceso de diálogo y pregunta que buscaba descubrir la verdad interior de cada individuo.</p>
+    <p>Además de estos temas centrales, los inicios de la filosofía también exploraron la metafísica, la política y la lógica. Los filósofos plantearon preguntas sobre la naturaleza del ser, la organización de la sociedad y el razonamiento válido. Estas investigaciones sentaron las bases para las ramas posteriores de la filosofía y su desarrollo continuo a lo largo de la historia.</p>
+    
+
+
+
+  </div>
+
+  <div class="section">
+    <h2>Filósofos y filósofas de la historia</h2>
+    <div class="philosopher">
+      <img src="Tales de Mileto.jpg" alt="Tales de Mileto.jpg">
+      <p>Tales de Mileto (c. 624 a.C. - c. 546 a.C., Grecia): Filósofo presocrático y uno de los Siete Sabios de Grecia. Se le atribuye la búsqueda de explicaciones racionales para los fenómenos naturales.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Protágoras.jpg" alt="Protágoras.jpg">
+      <p>Protágoras (c. 490 a.C. - c. 420 a.C., Grecia): Filósofo sofista famoso por su afirmación de que "el hombre es la medida de todas las cosas". Se centró en la retórica y la educación.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Parménides.jpg" alt="Imagen de filósofo 3">
+      <p>Parménides (c. 515 a.C. - c. 450 a.C., Grecia): Filósofo presocrático que defendió la idea de la realidad como un ente inmutable y eterno. Su obra "Sobre la naturaleza" es fundamental.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Heráclito.jpg" alt="Imagen de filósofo 4">
+      <p>Heráclito (c. 535 a.C. - c. 475 a.C., Grecia): Filósofo presocrático conocido por su doctrina del flujo constante y su afirmación de que "todo fluye".
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Aspasia de Mileto.jpg" alt="Imagen de filósofo 5">
+      <p>Aspasia de Mileto (c. 470 a.C. - c. 400 a.C., Grecia): Filósofa y educadora griega. Fue una destacada figura intelectual y se le atribuye influencia en la filosofía y la política en la antigua Atenas. Participó en debates filosóficos y se cree que influyó en el pensamiento de su esposo, el político Pericles.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Sócrates.jpg" alt="Imagen de filósofo 6">
+      <p>Sócrates (469 a.C. - 399 a.C., Grecia): Filósofo griego conocido por su método socrático de interrogación y su énfasis en el autoconocimiento y la virtud.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Hipatia de Alejandría.jpg" alt="Imagen de filósofo 7">
+      <p>Hipatia de Alejandría (c. 355-415, Egipto): Matemática, astrónoma y filósofa neoplatónica. Fue una de las primeras mujeres en destacar en el campo académico en la antigüedad tardía.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Platón.jpg" alt="Imagen de filósofo 8">
+      <p>Platón (427 a.C. - 347 a.C., Grecia): Filósofo griego y discípulo de Sócrates. Fundó la Academia y escribió diálogos filosóficos sobre diversos temas, incluyendo la teoría de las Ideas.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Aristóteles.jpg" alt="Imagen de filósofo 9">
+      <p>Aristóteles (384 a.C. - 322 a.C., Grecia): Filósofo griego y estudiante de Platón. Sus obras abarcan numerosos campos, como la lógica, la ética, la política y la metafísica.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Marco Aurelio.jpg" alt="Imagen de filósofo 10">
+      <p>Marco Aurelio (121-180, Imperio Romano): Emperador romano y filósofo estoico. Escribió "Meditaciones", una obra sobre ética y autodisciplina.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Anne Conway.jpg" alt="Imagen de filósofo 11">
+      <p>Anne Conway (1631-1679, Inglaterra): Filósofa y teósofa inglesa. Su obra principal, "Los principios de la filosofía más antigua y moderna", es considerada una precursora del idealismo.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="ÉMilieu de chatelet.jpg" alt="Imagen de filósofo 12">
+      <p>Émilie du Châtelet (1706-1749, Francia): Matemática, física y filósofa. Contribuyó al desarrollo de la física newtoniana y es conocida por su traducción y comentarios sobre los Principia de Newton.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="David Hume.jpg" alt="Imagen de filósofo 13">
+      <p>David Hume (1711-1776, Escocia): Filósofo escocés conocido por su empirismo radical y su escepticismo. Sus obras influyeron en el pensamiento filosófico y político.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Inmanuel Kant.jpg" alt="Imagen de filósofo 14">
+      <p>Immanuel Kant (1724-1804, Prusia): Filósofo de la Ilustración y uno de los pensadores más influyentes de la filosofía occidental. Su obra "Crítica de la razón pura" revolucionó la metafísica.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Mary Wollstonecraft.jpg" alt="Imagen de filósofo 15">
+      <p>Mary Wollstonecraft (1759-1797, Inglaterra): Escritora y filósofa política. Su obra "Vindicación de los derechos de la mujer" es un hito en el feminismo y defiende la igualdad de género.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Karl Marx.jpg" alt="Imagen de filósofo 16">
+      <p>Karl Marx (1818-1883, Alemania): Filósofo, economista y teórico político. Coautor del "Manifiesto Comunista" y fundador del socialismo científico.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Friedrich Nietzsche.jpg" alt="Imagen de filósofo 17">
+      <p>Friedrich Nietzsche (1844-1900, Alemania): Filósofo conocido por su crítica a la moralidad tradicional, la religión y la noción de verdad absoluta. Propuso el concepto del "superhombre".
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Martin Heidegger.jpg" alt="Imagen de filósofo 18">
+      <p>Martin Heidegger (1889-1976, Alemania): Filósofo fenomenológico y existencialista. Su obra "Ser y tiempo" exploró la naturaleza del ser y la existencia humana.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Hans - George Gadamer.jpg" alt="Imagen de filósofo 19">
+      <p>Hans-Georg Gadamer (1900-2002, Alemania): Filósofo hermenéutico. Desarrolló la teoría de la comprensión y la interpretación del texto y la tradición.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Jean-Paul Sartre.jpg" alt="Imagen de filósofo 20">
+      <p>Jean-Paul Sartre (1905-1980, Francia): Filósofo existencialista y escritor. Desarrolló conceptos como la "mala fe" y la "náusea" para explorar la libertad y la responsabilidad humanas.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Simone de Beauvoir.jpg" alt="Imagen de filósofo 21">
+      <p>Simone de Beauvoir (1908-1986, Francia): Filósofa y escritora feminista. Su obra "El segundo sexo" analiza la opresión de las mujeres y aboga por la igualdad de género.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="John Rawls.jpg" alt="Imagen de filósofo 22">
+      <p>John Rawls (1921-2002, Estados Unidos): Filósofo político y ético. Su teoría de la justicia como equidad ha influido en el pensamiento contemporáneo sobre la ética y la política.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Karl Otto Apel.jpg" alt="Imagen de filósofo 23">
+      <p>Karl Otto Apel (1922-2017, Alemania): Filósofo y lógico conocido por su trabajo en la ética del discurso y la fundamentación de la ética.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Lawerence Kohlberg.jpg" alt="Imagen de filósofo 24">
+      <p>Lawrence Kohlberg (1927-1987, Estados Unidos): Psicólogo y filósofo que desarrolló una teoría del desarrollo moral basada en etapas y niveles de razonamiento.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="EMilio Lledó.jpg" alt="Imagen de filósofo 25">
+      <p>Emilio Lledó (1927-, España): Filósofo español especializado en filosofía del lenguaje y ética.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="George Steiner.jpg" alt="Imagen de filósofo 26">
+      <p>George Steiner (1929-2020, Francia): Filósofo y crítico literario conocido por su trabajo en teoría de la literatura y la interpretación.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Jürgen Habermas.jpg" alt="Imagen de filósofo 27">
+      <p>Jürgen Habermas (1929-, Alemania): Filósofo y sociólogo conocido por su teoría de la acción comunicativa y su defensa de la democracia deliberativa.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Carol Gilligan.jpg" alt="Imagen de filósofo 28">
+      <p>Carol Gilligan (1936-, Estados Unidos): Filósofa y psicóloga que ha contribuido al campo de la ética feminista y la teoría del desarrollo moral.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Julia Kristeva.jpg" alt="Imagen de filósofo 29">
+      <p>Julia Kristeva (1941-, Bulgaria/Francia): Filósofa, psicoanalista y escritora. Sus trabajos exploran la lingüística, la semiótica y el psicoanálisis, así como temas de feminismo y filosofía política.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Martha Nussbaum.jpg" alt="Imagen de filósofo 30">
+      <p>Martha Nussbaum (1947-, Estados Unidos): Filósofa y teórica política conocida por su enfoque en las capacidades humanas, el desarrollo humano y la justicia social.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Adela Cortina.jpg" alt="Imagen de filósofo 31">
+      <p>Adela Cortina (1947-, España): Filósofa española conocida por sus trabajos en ética y filosofía política.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Michael Sandel.jpg" alt="Imagen de filósofo 32">
+      <p>Michael Sandel (1953-, Estados Unidos): Filósofo político y profesor de ética. Es conocido por su curso "Justicia", donde explora los debates morales y políticos contemporáneos.
+        </p>
+    </div>
+    <div class="philosopher">
+      <img src="Judith Becker.jpg" alt="Imagen de filósofo 33">
+      <p>Judith Butler (1956-, Estados Unidos): Filósofa y teórica queer. Sus ideas sobre la performatividad de género han influido en los estudios de género y la teoría feminista.
+        </p>
+    </div>
+    <!-- Agrega más divs .philosopher para incluir más filósofos -->
+  </div>
+
+  <div class="section">
+    <h2>Libros filosóficos</h2>
+    <p>Aquí puedes recomendar algunos libros filosóficos interesantes.</p>
+    <div class="books">
+      <div>
+        <h3>"Ética a Nicómaco" - Aristóteles: Explora la ética y la virtud, argumentando que la felicidad radica en la práctica de las virtudes morales.</h3>
+        <img src="Ética a Nicómaco.jpg" alt="Portada del libro 1">
+      </div>
+      <div>
+        <h3>"Así habló Zaratustra" - Friedrich Nietzsche: Presenta la idea del superhombre y aborda temas como la voluntad de poder, la moralidad y el sentido de la vida.</h3>
+        <img src="así habló zarastura.jpg" alt="Portada del libro 2">
+      </div>
+      <div>
+        <h3>"Crítica de la razón pura" - Immanuel Kant: Examina los límites y posibilidades del conocimiento humano, así como la distinción entre fenómenos y cosas en sí.</h3>
+        <img src="crítica de la razón pura.jpg" alt="Portada del libro 3">
+      </div>
+      <div>
+        <h3>"El Capital" - Karl Marx: Examina la relación entre el capital y el trabajo, y expone la teoría del valor, la explotación y la lucha de clases.</h3>
+        <img src="el capital 2.jpg" alt="Portada del libro 4">
+      </div>
+      <div>
+        <h3>"Más allá del bien y del mal" - Friedrich Nietzsche: Aborda la moralidad y la superación de los conceptos tradicionales de bien y mal, proponiendo la transvaloración de todos los valores.</h3>
+        <img src="Más allá del bien y el mal.jpg" alt="Portada del libro 5">
+      </div>
+      <div>
+        <h3>"Fundamentación de la metafísica de las costumbres" - Immanuel Kant: Examina los fundamentos de la moralidad y la importancia de la buena voluntad en la toma de decisiones éticas.</h3>
+        <img src="Fundamentación de la metafísica de las costumbres.jpg" alt="Portada del libro 6">
+      </div>
+      <div>
+        <h3>"Fedón" - Platón: Presenta el último diálogo de Sócrates antes de su ejecución, donde discute temas como la inmortalidad del alma y la filosofía como preparación para la muerte.</h3>
+        <img src="Fedón.jpg" alt="Portada del libro 7">
+      </div>
+      <div>
+        <h3>"La República" - Platón: Examina la justicia, la educación y la naturaleza del ser humano a través de un diálogo filosófico que presenta su famosa teoría de las Ideas.</h3>
+        <img src="La república.jpg" alt="Portada del libro 8">
+      </div>
+      <div>
+        <h3>"La genealogía de la moral" - Friedrich Nietzsche: Analiza el origen y desarrollo de los conceptos morales y critica los sistemas de valores establecidos en la sociedad.</h3>
+        <img src="la genealogía de la moral.jpg" alt="Portada del libro 9">
+      </div>
+      <div>
+        <h3>"Crítica de la razón práctica" - Immanuel Kant: Examina la ética y la moralidad desde una perspectiva práctica, explorando la idea del imperativo categórico y el deber moral.</h310
+        <img src="crítica de la razón pura.jpg" alt="Portada del libro 10">
+      </div>
+      <div
+        <h3>"Justicia: ¿Hacemos lo que debemos?" - Michael Sandel: Examina diversas teorías de la justicia y plantea preguntas éticas sobre temas actuales y controversiales.</h3>
+        <img src="Justicia.jpg" alt="Portada del libro 11">
+      </div>
+      <div>
+        <h3>"Ética mínima" - Adela Cortina: Propone una ética basada en el respeto y la solidaridad, con el objetivo de construir una sociedad más justa.</h3>
+        <img src="etica mínima adela cortina.jpg"Portada del libro 12">
+      </div>
+      <div>
+        <h3>"El banquete" - Platón: Presenta una serie de discursos sobre el amor y la belleza, explorando diferentes puntos de vista sobre estos temas.</h3>
+        <img src="El banquete.jpg" alt="Portada del libro 13">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p style="color: white;">Creado por Miguel Manzi (BC.1.1)</p>
+  </div>
+</div>
+
+<script>
+    var sidebar = document.getElementById('sidebar');
+    var sidebarToggle = document.getElementById('sidebar-toggle');
+    var sidebarLinks = document.querySelectorAll('.sidebar-link');
+    var content = document.querySelector('.content');
+
+    sidebarToggle.addEventListener('click', function() {
+      if (sidebar.style.left === '-220px') {
+        sidebar.style.left = '0';
+        content.style.marginLeft = '220px';
+      } else {
+        sidebar.style.left = '-220px';
+        content.style.marginLeft = '0';
+      }
+    });
+
+    sidebarLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = link.getAttribute('data-target');
+        var target = document.getElementById(targetId);
+        sidebar.style.left = '-220px';
+        content.style.marginLeft = '0';
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
